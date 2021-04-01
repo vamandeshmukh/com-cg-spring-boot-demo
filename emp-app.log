@@ -1,0 +1,22 @@
+2021-04-01 17:23:31.304  INFO 17624 --- [main] c.c.s.b.d.ComCgSpringBootDemoApplication : Starting ComCgSpringBootDemoApplication using Java 1.8.0_281 on DESKTOP-KFP7J4E with PID 17624 (C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo\bin\main started by Vaman in C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo)
+2021-04-01 17:23:31.313  INFO 17624 --- [main] c.c.s.b.d.ComCgSpringBootDemoApplication : No active profile set, falling back to default profiles: default
+2021-04-01 17:23:37.516  INFO 17624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-04-01 17:23:37.609  INFO 17624 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-01 17:23:37.611  INFO 17624 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-01 17:23:37.617  INFO 17624 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-04-01 17:23:37.620  INFO 17624 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-01 17:23:37.621  INFO 17624 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-01 17:23:37.639  INFO 17624 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-01 17:23:38.502  INFO 17624 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-01 17:23:38.506  INFO 17624 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6754 ms
+2021-04-01 17:23:40.810  INFO 17624 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-01 17:23:44.421  INFO 17624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-04-01 17:23:44.462  INFO 17624 --- [main] c.c.s.b.d.ComCgSpringBootDemoApplication : Started ComCgSpringBootDemoApplication in 15.563 seconds (JVM running for 18.373)
+2021-04-01 17:23:48.725  INFO 17624 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-01 17:23:48.726  INFO 17624 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-01 17:23:48.730  INFO 17624 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-01 17:23:48.909  INFO 17624 --- [http-nio-8090-exec-1] c.c.spring.boot.demo.EmployeeController  : empList
+2021-04-01 17:23:53.060  INFO 17624 --- [http-nio-8090-exec-2] com.cg.spring.boot.demo.Hello            : hello
+2021-04-01 17:23:55.181  INFO 17624 --- [http-nio-8090-exec-3] c.c.spring.boot.demo.EmployeeController  : Employee [eid=101, name=Vaman, salary=10.5]
+2021-04-01 17:24:49.094  INFO 17624 --- [http-nio-8090-exec-6] c.c.spring.boot.demo.EmployeeController  : empObj
+2021-04-01 17:34:58.454  INFO 17624 --- [http-nio-8090-exec-2] com.cg.spring.boot.demo.Hello            : hello
