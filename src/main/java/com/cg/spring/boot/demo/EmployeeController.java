@@ -1,65 +1,74 @@
 package com.cg.spring.boot.demo;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.Gson;
 
+//mark class as Controller
 @RestController
 public class EmployeeController {
 
 	private final Logger LOG = LoggerFactory.getLogger(EmployeeController.class);
 
-	Employee emp = new Employee(101, "Vaman", 10.5);
+	// autowire the EmployeeService class
+	@Autowired
+	EmployeeService employeeService;
 
-	@GetMapping("/emp")
-	public String emp() {
-		LOG.info(emp.toString());
-		return emp.toString();
+	// RresponseBody example
+	@PostMapping("/sample")
+	@ResponseBody
+	private String sample(@RequestBody String name) {
+		LOG.info(name);
+		String str = "Some String Value";
+		return str;
 	}
 
-	@GetMapping("/empObj")
-	public Employee empObj() {
-		LOG.info("empObj");
-		return emp;
+	// creating a get mapping that retrieves all the Employee detail from the
+	// database
+	@GetMapping("/Employee")
+	private List<Employee> getAllEmployee() {
+		LOG.info("getAllEmployee");
+		return employeeService.getAllEmployee();
 	}
 
-	@GetMapping("/empJson")
-	public String empJson() {
-		LOG.info("empJson");
-		ObjectMapper mapper = new ObjectMapper();
-		try {
-			String empJson = mapper.writeValueAsString(emp);
-			return empJson;
-		} catch (JsonProcessingException e) {
-			LOG.error("JsonProcessingException"); 
-			e.printStackTrace();
-		}
-		return null;
+//creating a get mapping that retrieves the detail of a specific Employee
+	@GetMapping("/Employee/{eid}")
+//	private Employee getEmployee(@PathVariable("eid") String eid) {
+	private Employee getEmployee(@PathVariable("eid") int eid) {
+		LOG.info("getEmployee");
+//		return employeeService.getEmployeeById(Integer.parseInt(eid));
+		return employeeService.getEmployeeById(eid);
 	}
 
-	@GetMapping("/empGson")
-	public String empGson() {
-		LOG.info("empGson");
-		Gson gson = new Gson();
-		String empGson = gson.toJson(emp);
-		return empGson;
+//creating a delete mapping that deletes a specified Employee
+	@DeleteMapping("/Employee/{eid}")
+	private void deleteEmployee(@PathVariable("eid") int eid) {
+		LOG.info("deleteEmployee");
+		employeeService.delete(eid);
 	}
 
-	@RequestMapping("/empList")
-	public List<Employee> getAllEmployees() {
-		LOG.info("empList");
-		List<Employee> employeeList = new ArrayList<>();
-		employeeList.add(new Employee(101, "Vaman", 10.5));
-		employeeList.add(new Employee(102, "Soman", 10.6));
-		employeeList.add(new Employee(103, "Raman", 10.7));
-		return employeeList;
+//creating post mapping that post the Employee detail in the database
+	@PostMapping("/Employee")
+	private int saveEmployee(@RequestBody Employee Employee) {
+		LOG.info("saveEmployee");
+		employeeService.saveOrUpdate(Employee);
+		return 100;
+	}
+
+//creating put mapping that updates the Employee detail
+	@PutMapping("/Employee")
+	private Employee update(@RequestBody Employee Employee) {
+		employeeService.saveOrUpdate(Employee);
+		return Employee;
 	}
 }
