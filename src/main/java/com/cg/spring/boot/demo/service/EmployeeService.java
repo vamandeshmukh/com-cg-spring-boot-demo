@@ -11,6 +11,7 @@ import com.cg.spring.boot.demo.repository.EmployeeRepository;
 //defining the business logic
 @Service
 public class EmployeeService {
+
 	@Autowired
 	EmployeeRepository employeeRepository;
 

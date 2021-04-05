@@ -17,6 +17,7 @@ import com.cg.spring.boot.demo.service.EmployeeService;
 @RestController
 public class EmployeeController {
 //autowire the EmployeeService class
+	
 	@Autowired
 	EmployeeService employeeService;
 
