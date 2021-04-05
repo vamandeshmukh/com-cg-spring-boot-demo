@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cg.spring.boot.demo.model.Employee;
@@ -15,6 +16,7 @@ import com.cg.spring.boot.demo.service.EmployeeService;
 
 //mark class as Controller
 @RestController
+@RequestMapping("/employee")
 public class EmployeeController {
 //autowire the EmployeeService class
 
@@ -22,25 +24,25 @@ public class EmployeeController {
 	EmployeeService employeeService;
 
 //creating a get mapping that retrieves all the Employee detail from the database
-	@GetMapping("/Employee")
+	@GetMapping("/getAllEmployee")
 	private List<Employee> getAllEmployee() {
 		return employeeService.getAllEmployee();
 	}
 
 //creating a get mapping that retrieves the detail of a specific Employee
-	@GetMapping("/Employee/{eid}")
+	@GetMapping("/getEmployee/{eid}")
 	private Employee getEmployee(@PathVariable("eid") int eid) {
 		return employeeService.getEmployeeById(eid);
 	}
 
 //creating a delete mapping that deletes a specified Employee
-	@DeleteMapping("/Employee/{eid}")
+	@DeleteMapping("/deleteEmployee/{eid}")
 	private void deleteEmployee(@PathVariable("eid") int eid) {
 		employeeService.delete(eid);
 	}
 
 //creating post mapping that post the Employee detail in the database
-	@PostMapping("/Employee")
+	@PostMapping("/saveEmployee")
 	private int saveEmployee(@RequestBody Employee Employee) {
 		employeeService.saveOrUpdate(Employee);
 //		employeeService.
@@ -56,8 +58,8 @@ public class EmployeeController {
 //}
 
 //creating put mapping that updates the Employee detail
-	@PutMapping("/Employee")
-	private Employee update(@RequestBody Employee Employee) {
+	@PutMapping("/updateEmployee")
+	private Employee updateEmployee(@RequestBody Employee Employee) {
 		employeeService.saveOrUpdate(Employee);
 		return Employee;
 	}
