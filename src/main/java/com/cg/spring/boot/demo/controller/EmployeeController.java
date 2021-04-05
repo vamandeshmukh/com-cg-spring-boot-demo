@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.cg.spring.boot.demo.model.Employee;
+import com.cg.spring.boot.demo.service.EmployeeService;
+
 //mark class as Controller
 @RestController
 public class EmployeeController {
