@@ -2,6 +2,8 @@ package com.cg.spring.boot.demo.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,12 +26,23 @@ public class EmployeeService {
 
 //getting a specific record by using the method findById() of CrudRepository
 	public Employee getEmployeeById(int id) {
-		return employeeRepository.findById(id).get();
+		// logic
+		try {
+			return employeeRepository.findById(id).get();
+		} catch (NoSuchElementException nse) {
+//			throw new CustomException();
+//			LOG.info();
+			return null;
+		} catch (Exception ex) {
+			// LOG.info();
+			return null;
+		}
 	}
 
 //saving a specific record by using the method save() of CrudRepository
 	public void saveOrUpdate(Employee employee) {
 		employeeRepository.save(employee);
+//		employeeRepository.
 	}
 
 //deleting a specific record by using the method deleteById() of CrudRepository

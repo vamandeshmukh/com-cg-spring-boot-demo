@@ -17,7 +17,7 @@ import com.cg.spring.boot.demo.service.EmployeeService;
 @RestController
 public class EmployeeController {
 //autowire the EmployeeService class
-	
+
 	@Autowired
 	EmployeeService employeeService;
 
@@ -43,8 +43,17 @@ public class EmployeeController {
 	@PostMapping("/Employee")
 	private int saveEmployee(@RequestBody Employee Employee) {
 		employeeService.saveOrUpdate(Employee);
+//		employeeService.
 		return Employee.getEid();
 	}
+
+////creating put mapping that updates the Employee detail
+//	@PutMapping("/Employee")
+//	private Employee update(@RequestBody Employee Employee) {
+//		employeeService.saveOrUpdate(Employee);
+//		return Employee;
+//	}
+//}
 
 //creating put mapping that updates the Employee detail
 	@PutMapping("/Employee")
