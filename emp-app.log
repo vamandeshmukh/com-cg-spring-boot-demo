@@ -4717,3 +4717,725 @@ javax.persistence.NonUniqueResultException: query did not return a unique result
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.44.jar:9.0.44]
 	at java.lang.Thread.run(Unknown Source) [na:1.8.0_281]
 
+2021-04-07 15:24:37.831  INFO 19180 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:24:37.891  INFO 19180 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:24:37.907  INFO 19180 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-07 15:24:37.954  INFO 19180 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-07 15:24:38.484  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Start...
+2021-04-07 15:24:38.934  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Starting ComCgSpringBootDemoApplication using Java 1.8.0_281 on DESKTOP-KFP7J4E with PID 19180 (C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo\bin\main started by Vaman in C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo)
+2021-04-07 15:24:38.936  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : No active profile set, falling back to default profiles: default
+2021-04-07 15:24:41.600  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-07 15:24:41.774  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153 ms. Found 1 JPA repository interfaces.
+2021-04-07 15:24:43.642  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-04-07 15:24:43.645  INFO 19180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-07 15:24:43.648  INFO 19180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 15:24:43.651  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-04-07 15:24:43.764  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-07 15:24:43.772  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-07 15:24:43.777  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-07 15:24:44.054  INFO 19180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-07 15:24:44.059  INFO 19180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5005 ms
+2021-04-07 15:24:45.014  INFO 19180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-07 15:24:45.046  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-04-07 15:24:45.512  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-04-07 15:24:45.514  INFO 19180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-07 15:24:48.192  INFO 19180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-07 15:24:48.203  INFO 19180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:24:48.751  INFO 19180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-07 15:24:50.146  WARN 19180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-07 15:24:50.768  INFO 19180 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-07 15:24:51.092  INFO 19180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:24:51.977  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-04-07 15:24:52.044  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-07 15:24:52.047  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-07 15:24:52.075  INFO 19180 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-07 15:24:52.484  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmpListUsingGET_1
+2021-04-07 15:24:52.560  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmployeeUsingGET_1
+2021-04-07 15:24:52.641  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Started ComCgSpringBootDemoApplication in 14.137 seconds (JVM running for 889.48)
+2021-04-07 15:24:52.649  INFO 19180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-07 15:25:11.441  INFO 19180 --- [Thread-27] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:25:11.458  INFO 19180 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:25:11.461  INFO 19180 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-04-07 15:25:11.556  INFO 19180 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-04-07 15:25:12.303  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Start...
+2021-04-07 15:25:12.752  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Starting ComCgSpringBootDemoApplication using Java 1.8.0_281 on DESKTOP-KFP7J4E with PID 19180 (C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo\bin\main started by Vaman in C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo)
+2021-04-07 15:25:12.753  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : No active profile set, falling back to default profiles: default
+2021-04-07 15:25:16.018  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-07 15:25:16.153  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 1 JPA repository interfaces.
+2021-04-07 15:25:17.257  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-04-07 15:25:17.259  INFO 19180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-07 15:25:17.261  INFO 19180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 15:25:17.262  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-04-07 15:25:17.264  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-07 15:25:17.266  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-07 15:25:17.267  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-07 15:25:19.463  INFO 19180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-07 15:25:19.464  INFO 19180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6667 ms
+2021-04-07 15:25:21.558  INFO 19180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-07 15:25:21.604  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-04-07 15:25:22.303  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-04-07 15:25:22.310  INFO 19180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-07 15:25:23.710  INFO 19180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-07 15:25:23.713  INFO 19180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:25:23.733  INFO 19180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-07 15:25:24.906  WARN 19180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-07 15:25:26.230  INFO 19180 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-07 15:25:27.211  INFO 19180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:25:28.355  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-04-07 15:25:28.357  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-07 15:25:28.359  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-07 15:25:28.639  INFO 19180 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-07 15:25:29.462  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmpListUsingGET_1
+2021-04-07 15:25:29.480  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmployeeUsingGET_1
+2021-04-07 15:25:29.655  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Started ComCgSpringBootDemoApplication in 17.322 seconds (JVM running for 926.493)
+2021-04-07 15:25:29.663  INFO 19180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-07 15:26:05.229  INFO 19180 --- [Thread-34] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:26:05.247  INFO 19180 --- [Thread-34] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:26:05.258  INFO 19180 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-04-07 15:26:05.345  INFO 19180 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-04-07 15:26:06.296  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Start...
+2021-04-07 15:26:07.636  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Starting ComCgSpringBootDemoApplication using Java 1.8.0_281 on DESKTOP-KFP7J4E with PID 19180 (C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo\bin\main started by Vaman in C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo)
+2021-04-07 15:26:07.641  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : No active profile set, falling back to default profiles: default
+2021-04-07 15:26:13.527  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-07 15:26:13.646  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 1 JPA repository interfaces.
+2021-04-07 15:26:14.828  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-04-07 15:26:14.831  INFO 19180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-07 15:26:14.838  INFO 19180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 15:26:14.840  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-04-07 15:26:14.842  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-07 15:26:14.842  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-07 15:26:14.843  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-07 15:26:14.961  INFO 19180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-07 15:26:14.962  INFO 19180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7288 ms
+2021-04-07 15:26:15.199  INFO 19180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-07 15:26:15.231  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2021-04-07 15:26:15.433  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2021-04-07 15:26:15.434  INFO 19180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-07 15:26:16.440  INFO 19180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-07 15:26:16.442  INFO 19180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:26:16.463  INFO 19180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-07 15:26:18.074  WARN 19180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-07 15:26:18.594  INFO 19180 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-07 15:26:19.032  INFO 19180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:26:19.390  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-04-07 15:26:19.393  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-07 15:26:19.395  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-07 15:26:19.472  INFO 19180 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-07 15:26:19.731  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmpListUsingGET_1
+2021-04-07 15:26:19.772  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmployeeUsingGET_1
+2021-04-07 15:26:19.809  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Started ComCgSpringBootDemoApplication in 13.484 seconds (JVM running for 976.648)
+2021-04-07 15:26:19.835  INFO 19180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-07 15:29:02.825  INFO 19180 --- [Thread-41] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:29:02.834  INFO 19180 --- [Thread-41] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:29:02.837  INFO 19180 --- [Thread-41] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2021-04-07 15:29:02.921  INFO 19180 --- [Thread-41] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2021-04-07 15:29:03.492  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Start...
+2021-04-07 15:29:03.656  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Starting ComCgSpringBootDemoApplication using Java 1.8.0_281 on DESKTOP-KFP7J4E with PID 19180 (C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo\bin\main started by Vaman in C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo)
+2021-04-07 15:29:03.657  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : No active profile set, falling back to default profiles: default
+2021-04-07 15:29:06.224  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-07 15:29:06.309  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interfaces.
+2021-04-07 15:29:07.505  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-04-07 15:29:07.508  INFO 19180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-07 15:29:07.509  INFO 19180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 15:29:07.512  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-04-07 15:29:07.512  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-07 15:29:07.513  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-07 15:29:07.514  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-07 15:29:07.790  INFO 19180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-07 15:29:07.792  INFO 19180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4122 ms
+2021-04-07 15:29:08.161  INFO 19180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-07 15:29:08.264  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2021-04-07 15:29:09.577  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2021-04-07 15:29:09.588  WARN 19180 --- [restartedMain] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-5 - Connection oracle.jdbc.driver.T4CConnection@77ba75dc marked as broken because of SQLSTATE(08003), ErrorCode(17008)
+
+java.sql.SQLRecoverableException: Closed Connection
+	at oracle.jdbc.driver.PhysicalConnection.getMetaData(PhysicalConnection.java:2755) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at com.zaxxer.hikari.pool.ProxyConnection.getMetaData(ProxyConnection.java:380) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.getMetaData(HikariProxyConnection.java) [HikariCP-3.4.5.jar:na]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:70) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) [spring-orm-5.3.5.jar:5.3.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.3.5.jar:5.3.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) [spring-orm-5.3.5.jar:5.3.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) [spring-orm-5.3.5.jar:5.3.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-2.4.4.jar:2.4.4]
+	at com.cg.spring.boot.demo.ComCgSpringBootDemoApplication.main(ComCgSpringBootDemoApplication.java:18) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_281]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_281]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_281]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_281]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.1.jar:2.4.1]
+
+2021-04-07 15:29:09.592  WARN 19180 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLRecoverableException: Closed Connection
+
+java.sql.SQLRecoverableException: Closed Connection
+	at oracle.jdbc.driver.PhysicalConnection.getMetaData(PhysicalConnection.java:2755) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at com.zaxxer.hikari.pool.ProxyConnection.getMetaData(ProxyConnection.java:380) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.getMetaData(HikariProxyConnection.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:70) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) [spring-orm-5.3.5.jar:5.3.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.3.5.jar:5.3.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) [spring-orm-5.3.5.jar:5.3.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) [spring-orm-5.3.5.jar:5.3.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-2.4.4.jar:2.4.4]
+	at com.cg.spring.boot.demo.ComCgSpringBootDemoApplication.main(ComCgSpringBootDemoApplication.java:18) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_281]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_281]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_281]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_281]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.1.jar:2.4.1]
+
+2021-04-07 15:29:09.594  INFO 19180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-07 15:29:11.428  WARN 19180 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "create table emp (eid number(10,0) not null, name varchar2(255 char), salary double precision, primary key (eid))" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table emp (eid number(10,0) not null, name varchar2(255 char), salary double precision, primary key (eid))" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:277) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:71) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) [hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) [spring-orm-5.3.5.jar:5.3.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.3.5.jar:5.3.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) [spring-orm-5.3.5.jar:5.3.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) [spring-orm-5.3.5.jar:5.3.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) [spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-2.4.4.jar:2.4.4]
+	at com.cg.spring.boot.demo.ComCgSpringBootDemoApplication.main(ComCgSpringBootDemoApplication.java:18) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_281]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_281]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_281]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_281]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.1.jar:2.4.1]
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00955: name is already used by an existing object
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:509) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:461) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1104) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:553) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:269) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:655) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:229) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:41) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:928) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1205) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:1823) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:1778) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:303) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.29.Final.jar:5.4.29.Final]
+	... 40 common frames omitted
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00955: name is already used by an existing object
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:513) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	... 55 common frames omitted
+
+2021-04-07 15:29:11.431  INFO 19180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-07 15:29:11.438  INFO 19180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:29:11.461  INFO 19180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-07 15:29:12.722  WARN 19180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-07 15:29:13.803  INFO 19180 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-07 15:29:14.188  INFO 19180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:29:14.683  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-04-07 15:29:14.685  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-07 15:29:14.688  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-07 15:29:14.763  INFO 19180 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-07 15:29:15.800  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmpListUsingGET_1
+2021-04-07 15:29:15.818  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmployeeUsingGET_1
+2021-04-07 15:29:15.913  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Started ComCgSpringBootDemoApplication in 12.406 seconds (JVM running for 1152.753)
+2021-04-07 15:29:15.921  INFO 19180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-07 15:29:27.539  INFO 19180 --- [Thread-47] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:29:27.542  INFO 19180 --- [Thread-47] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:29:27.544  INFO 19180 --- [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2021-04-07 15:29:27.596  INFO 19180 --- [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2021-04-07 15:29:28.218  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Start...
+2021-04-07 15:29:28.723  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Starting ComCgSpringBootDemoApplication using Java 1.8.0_281 on DESKTOP-KFP7J4E with PID 19180 (C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo\bin\main started by Vaman in C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo)
+2021-04-07 15:29:28.820  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : No active profile set, falling back to default profiles: default
+2021-04-07 15:29:32.031  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-07 15:29:32.136  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2021-04-07 15:29:32.854  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-04-07 15:29:32.868  INFO 19180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-07 15:29:32.870  INFO 19180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 15:29:32.877  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-04-07 15:29:32.879  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-07 15:29:32.882  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-07 15:29:32.884  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-07 15:29:32.962  INFO 19180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-07 15:29:32.962  INFO 19180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4061 ms
+2021-04-07 15:29:33.094  INFO 19180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-07 15:29:33.129  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2021-04-07 15:29:33.268  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2021-04-07 15:29:33.270  INFO 19180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-07 15:29:34.057  INFO 19180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-07 15:29:34.058  INFO 19180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:29:34.077  INFO 19180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-07 15:29:35.235  WARN 19180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-07 15:29:35.568  INFO 19180 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-07 15:29:36.014  INFO 19180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:29:36.302  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-04-07 15:29:36.304  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-07 15:29:36.309  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-07 15:29:36.329  INFO 19180 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-07 15:29:36.614  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmpListUsingGET_1
+2021-04-07 15:29:36.624  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmployeeUsingGET_1
+2021-04-07 15:29:36.699  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Started ComCgSpringBootDemoApplication in 8.459 seconds (JVM running for 1173.538)
+2021-04-07 15:29:36.704  INFO 19180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-07 15:30:24.268  INFO 19180 --- [Thread-53] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:30:24.272  INFO 19180 --- [Thread-53] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:30:24.274  INFO 19180 --- [Thread-53] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2021-04-07 15:30:24.616  INFO 19180 --- [Thread-53] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2021-04-07 15:30:25.168  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Start...
+2021-04-07 15:30:25.321  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Starting ComCgSpringBootDemoApplication using Java 1.8.0_281 on DESKTOP-KFP7J4E with PID 19180 (C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo\bin\main started by Vaman in C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo)
+2021-04-07 15:30:25.322  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : No active profile set, falling back to default profiles: default
+2021-04-07 15:30:26.738  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-07 15:30:26.871  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132 ms. Found 1 JPA repository interfaces.
+2021-04-07 15:30:27.542  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-04-07 15:30:27.546  INFO 19180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-07 15:30:27.548  INFO 19180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 15:30:27.549  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-04-07 15:30:27.550  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-07 15:30:27.552  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-07 15:30:27.553  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-07 15:30:27.593  INFO 19180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-07 15:30:27.594  INFO 19180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2253 ms
+2021-04-07 15:30:27.694  INFO 19180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-07 15:30:27.716  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2021-04-07 15:30:27.821  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2021-04-07 15:30:27.822  INFO 19180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-07 15:30:28.145  INFO 19180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-07 15:30:28.146  INFO 19180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:30:28.161  INFO 19180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-07 15:30:28.729  WARN 19180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-07 15:30:28.936  INFO 19180 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-07 15:30:29.119  INFO 19180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:30:29.399  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-04-07 15:30:29.401  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-07 15:30:29.404  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-07 15:30:29.419  INFO 19180 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-07 15:30:29.698  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmpListUsingGET_1
+2021-04-07 15:30:29.719  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmployeeUsingGET_1
+2021-04-07 15:30:29.747  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Started ComCgSpringBootDemoApplication in 4.558 seconds (JVM running for 1226.586)
+2021-04-07 15:30:29.753  INFO 19180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-07 15:33:18.164  INFO 19180 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-07 15:33:18.177  INFO 19180 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-07 15:33:18.181  INFO 19180 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-04-07 15:34:37.911  WARN 19180 --- [http-nio-8090-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cg.spring.boot.demo.exceptions.EmployeeNotfoundException]
+2021-04-07 15:37:16.883  INFO 19180 --- [Thread-59] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:37:16.886  INFO 19180 --- [Thread-59] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:37:16.895  INFO 19180 --- [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2021-04-07 15:37:16.944  INFO 19180 --- [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2021-04-07 15:37:17.534  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Start...
+2021-04-07 15:37:17.643  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Starting ComCgSpringBootDemoApplication using Java 1.8.0_281 on DESKTOP-KFP7J4E with PID 19180 (C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo\bin\main started by Vaman in C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo)
+2021-04-07 15:37:17.644  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : No active profile set, falling back to default profiles: default
+2021-04-07 15:37:21.259  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-07 15:37:21.323  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+2021-04-07 15:37:22.428  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-04-07 15:37:22.429  INFO 19180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-07 15:37:22.430  INFO 19180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 15:37:22.431  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-04-07 15:37:22.432  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-07 15:37:22.432  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-07 15:37:22.433  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-07 15:37:22.481  INFO 19180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-07 15:37:22.481  INFO 19180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4820 ms
+2021-04-07 15:37:22.607  INFO 19180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-07 15:37:22.619  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2021-04-07 15:37:22.834  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2021-04-07 15:37:22.836  INFO 19180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-07 15:37:23.229  INFO 19180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-07 15:37:23.230  INFO 19180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:37:23.245  INFO 19180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-07 15:37:23.746  WARN 19180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-07 15:37:24.751  INFO 19180 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-07 15:37:25.493  INFO 19180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:37:26.269  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-04-07 15:37:26.272  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-07 15:37:26.274  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-07 15:37:26.297  INFO 19180 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-07 15:37:27.325  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmpListUsingGET_1
+2021-04-07 15:37:27.335  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmployeeUsingGET_1
+2021-04-07 15:37:27.369  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Started ComCgSpringBootDemoApplication in 9.82 seconds (JVM running for 1644.209)
+2021-04-07 15:37:27.382  INFO 19180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-07 15:37:31.439  INFO 19180 --- [Thread-72] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:37:31.449  INFO 19180 --- [Thread-72] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:37:31.450  INFO 19180 --- [Thread-72] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2021-04-07 15:37:31.518  INFO 19180 --- [Thread-72] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2021-04-07 15:37:32.428  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Start...
+2021-04-07 15:37:32.605  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Starting ComCgSpringBootDemoApplication using Java 1.8.0_281 on DESKTOP-KFP7J4E with PID 19180 (C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo\bin\main started by Vaman in C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo)
+2021-04-07 15:37:32.606  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : No active profile set, falling back to default profiles: default
+2021-04-07 15:37:33.873  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-07 15:37:33.913  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2021-04-07 15:37:34.428  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-04-07 15:37:34.430  INFO 19180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-07 15:37:34.431  INFO 19180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 15:37:34.432  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-04-07 15:37:34.434  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-07 15:37:34.434  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-07 15:37:34.435  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-07 15:37:34.502  INFO 19180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-07 15:37:34.503  INFO 19180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1875 ms
+2021-04-07 15:37:34.688  INFO 19180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-07 15:37:34.712  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2021-04-07 15:37:34.905  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2021-04-07 15:37:34.909  INFO 19180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-07 15:37:35.444  INFO 19180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-07 15:37:35.445  INFO 19180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:37:35.469  INFO 19180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-07 15:37:36.120  WARN 19180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-07 15:37:36.602  INFO 19180 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-07 15:37:36.987  INFO 19180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:37:37.498  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-04-07 15:37:37.500  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-07 15:37:37.502  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-07 15:37:37.606  INFO 19180 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-07 15:37:38.043  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmpListUsingGET_1
+2021-04-07 15:37:38.053  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmployeeUsingGET_1
+2021-04-07 15:37:38.104  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Started ComCgSpringBootDemoApplication in 5.659 seconds (JVM running for 1654.943)
+2021-04-07 15:37:38.108  INFO 19180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-07 15:38:33.132  INFO 19180 --- [Thread-78] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:38:33.137  INFO 19180 --- [Thread-78] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:38:33.140  INFO 19180 --- [Thread-78] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2021-04-07 15:38:33.178  INFO 19180 --- [Thread-78] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2021-04-07 15:38:33.779  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Start...
+2021-04-07 15:38:33.975  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Starting ComCgSpringBootDemoApplication using Java 1.8.0_281 on DESKTOP-KFP7J4E with PID 19180 (C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo\bin\main started by Vaman in C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo)
+2021-04-07 15:38:33.977  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : No active profile set, falling back to default profiles: default
+2021-04-07 15:38:35.548  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-07 15:38:35.591  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2021-04-07 15:38:36.159  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-04-07 15:38:36.164  INFO 19180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-07 15:38:36.165  INFO 19180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 15:38:36.166  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-04-07 15:38:36.167  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-07 15:38:36.167  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-07 15:38:36.168  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-07 15:38:36.224  INFO 19180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-07 15:38:36.225  INFO 19180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2238 ms
+2021-04-07 15:38:36.393  INFO 19180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-07 15:38:36.406  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2021-04-07 15:38:36.476  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2021-04-07 15:38:36.480  INFO 19180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-07 15:38:36.784  INFO 19180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-07 15:38:36.784  INFO 19180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:38:36.802  INFO 19180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-07 15:38:37.450  WARN 19180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-07 15:38:37.869  INFO 19180 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-07 15:38:38.101  INFO 19180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:38:38.510  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-04-07 15:38:38.512  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-07 15:38:38.514  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-07 15:38:38.624  INFO 19180 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-07 15:38:38.897  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmpListUsingGET_1
+2021-04-07 15:38:38.914  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmployeeUsingGET_1
+2021-04-07 15:38:38.953  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Started ComCgSpringBootDemoApplication in 5.158 seconds (JVM running for 1715.792)
+2021-04-07 15:38:38.959  INFO 19180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-07 15:38:57.071  INFO 19180 --- [Thread-84] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:38:57.075  INFO 19180 --- [Thread-84] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:38:57.077  INFO 19180 --- [Thread-84] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2021-04-07 15:38:57.139  INFO 19180 --- [Thread-84] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2021-04-07 15:38:57.854  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Start...
+2021-04-07 15:38:57.976  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Starting ComCgSpringBootDemoApplication using Java 1.8.0_281 on DESKTOP-KFP7J4E with PID 19180 (C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo\bin\main started by Vaman in C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo)
+2021-04-07 15:38:57.977  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : No active profile set, falling back to default profiles: default
+2021-04-07 15:38:59.325  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-07 15:38:59.367  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2021-04-07 15:38:59.858  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-04-07 15:38:59.872  INFO 19180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-07 15:38:59.930  INFO 19180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 15:38:59.933  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-04-07 15:38:59.934  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-07 15:38:59.935  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-07 15:38:59.935  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-07 15:39:00.257  INFO 19180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-07 15:39:00.258  INFO 19180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2273 ms
+2021-04-07 15:39:00.863  INFO 19180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-07 15:39:01.018  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2021-04-07 15:39:01.133  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2021-04-07 15:39:01.135  INFO 19180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-07 15:39:01.632  INFO 19180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-07 15:39:01.634  INFO 19180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:39:01.651  INFO 19180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-07 15:39:03.365  WARN 19180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-07 15:39:04.668  INFO 19180 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-07 15:39:04.930  INFO 19180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:39:05.249  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-04-07 15:39:05.251  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-07 15:39:05.256  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-07 15:39:05.280  INFO 19180 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-07 15:39:05.662  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmpListUsingGET_1
+2021-04-07 15:39:05.675  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmployeeUsingGET_1
+2021-04-07 15:39:05.804  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Started ComCgSpringBootDemoApplication in 7.928 seconds (JVM running for 1742.643)
+2021-04-07 15:39:05.848  INFO 19180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-07 15:39:16.758  INFO 19180 --- [Thread-90] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:39:16.762  INFO 19180 --- [Thread-90] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:39:16.764  INFO 19180 --- [Thread-90] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2021-04-07 15:39:16.813  INFO 19180 --- [Thread-90] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2021-04-07 15:39:17.458  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Start...
+2021-04-07 15:39:17.608  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Starting ComCgSpringBootDemoApplication using Java 1.8.0_281 on DESKTOP-KFP7J4E with PID 19180 (C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo\bin\main started by Vaman in C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo)
+2021-04-07 15:39:17.609  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : No active profile set, falling back to default profiles: default
+2021-04-07 15:39:19.045  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-07 15:39:19.085  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2021-04-07 15:39:19.458  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-04-07 15:39:19.460  INFO 19180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-07 15:39:19.462  INFO 19180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 15:39:19.463  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-04-07 15:39:19.463  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-07 15:39:19.464  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-07 15:39:19.464  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-07 15:39:19.506  INFO 19180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-07 15:39:19.507  INFO 19180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1889 ms
+2021-04-07 15:39:19.622  INFO 19180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-07 15:39:19.638  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2021-04-07 15:39:19.690  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2021-04-07 15:39:19.691  INFO 19180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-07 15:39:19.972  INFO 19180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-07 15:39:19.973  INFO 19180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:39:19.985  INFO 19180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-07 15:39:20.689  WARN 19180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-07 15:39:21.166  INFO 19180 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-07 15:39:21.424  INFO 19180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:39:21.833  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-04-07 15:39:21.835  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-07 15:39:21.838  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-07 15:39:21.862  INFO 19180 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-07 15:39:22.117  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmpListUsingGET_1
+2021-04-07 15:39:22.155  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmployeeUsingGET_1
+2021-04-07 15:39:22.182  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Started ComCgSpringBootDemoApplication in 4.702 seconds (JVM running for 1759.021)
+2021-04-07 15:39:22.185  INFO 19180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-07 15:43:16.073  INFO 19180 --- [Thread-96] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:43:16.076  INFO 19180 --- [Thread-96] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:43:16.078  INFO 19180 --- [Thread-96] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2021-04-07 15:43:16.108  INFO 19180 --- [Thread-96] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2021-04-07 15:43:16.767  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Start...
+2021-04-07 15:43:16.908  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Starting ComCgSpringBootDemoApplication using Java 1.8.0_281 on DESKTOP-KFP7J4E with PID 19180 (C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo\bin\main started by Vaman in C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo)
+2021-04-07 15:43:16.909  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : No active profile set, falling back to default profiles: default
+2021-04-07 15:43:18.693  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-07 15:43:18.725  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+2021-04-07 15:43:20.055  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-04-07 15:43:20.058  INFO 19180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-07 15:43:20.060  INFO 19180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 15:43:20.062  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-04-07 15:43:20.064  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-07 15:43:20.064  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-07 15:43:20.064  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-07 15:43:20.144  INFO 19180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-07 15:43:20.145  INFO 19180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3223 ms
+2021-04-07 15:43:20.350  INFO 19180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-07 15:43:20.401  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2021-04-07 15:43:20.477  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2021-04-07 15:43:20.478  INFO 19180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-07 15:43:20.802  INFO 19180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-07 15:43:20.802  INFO 19180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:43:20.816  INFO 19180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-07 15:43:21.481  WARN 19180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-07 15:43:21.654  INFO 19180 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-07 15:43:21.861  INFO 19180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:43:22.637  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-04-07 15:43:22.640  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-07 15:43:22.642  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-07 15:43:22.657  INFO 19180 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-07 15:43:23.019  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmpListUsingGET_1
+2021-04-07 15:43:23.218  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmployeeUsingGET_1
+2021-04-07 15:43:23.246  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Started ComCgSpringBootDemoApplication in 6.455 seconds (JVM running for 2000.085)
+2021-04-07 15:43:23.254  INFO 19180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-07 15:44:26.715  INFO 16756 --- [main] c.c.s.boot.demo.EmployeeControllerTests  : Starting EmployeeControllerTests using Java 1.8.0_281 on DESKTOP-KFP7J4E with PID 16756 (started by Vaman in C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo)
+2021-04-07 15:44:26.725  INFO 16756 --- [main] c.c.s.boot.demo.EmployeeControllerTests  : No active profile set, falling back to default profiles: default
+2021-04-07 15:44:33.599  INFO 16756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-07 15:44:34.117  INFO 16756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 479 ms. Found 1 JPA repository interfaces.
+2021-04-07 15:44:41.699  INFO 16756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-04-07 15:44:41.777  INFO 16756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-07 15:44:41.781  INFO 16756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 15:44:41.787  INFO 16756 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-04-07 15:44:41.792  INFO 16756 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-07 15:44:41.793  INFO 16756 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-07 15:44:41.828  INFO 16756 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-07 15:44:43.350  INFO 16756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-07 15:44:43.353  INFO 16756 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 16299 ms
+2021-04-07 15:44:47.206  INFO 16756 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-07 15:44:47.815  INFO 16756 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-07 15:44:48.990  INFO 16756 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-07 15:44:49.877  INFO 16756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-07 15:44:54.318  INFO 16756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-07 15:44:54.481  INFO 16756 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-07 15:45:02.238  INFO 16756 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-07 15:45:02.318  INFO 16756 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:45:12.194  WARN 16756 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-07 15:45:17.584  INFO 16756 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-07 15:45:20.525  INFO 16756 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:45:27.276  INFO 16756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 64647 (http) with context path ''
+2021-04-07 15:45:27.282  INFO 16756 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-07 15:45:28.327  INFO 16756 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-07 15:45:28.580  INFO 16756 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-07 15:45:29.999  INFO 16756 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmpListUsingGET_1
+2021-04-07 15:45:30.035  INFO 16756 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmployeeUsingGET_1
+2021-04-07 15:45:30.319  INFO 16756 --- [main] c.c.s.boot.demo.EmployeeControllerTests  : Started EmployeeControllerTests in 65.795 seconds (JVM running for 72.585)
+2021-04-07 15:45:32.469  INFO 16756 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-07 15:45:32.473  INFO 16756 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-07 15:45:32.476  INFO 16756 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-04-07 15:45:34.776  INFO 16756 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:45:34.835  INFO 16756 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:45:34.845  INFO 16756 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-07 15:45:34.920  INFO 16756 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-07 15:49:23.226  INFO 19180 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-07 15:49:23.228  INFO 19180 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-07 15:49:23.231  INFO 19180 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-04-07 15:50:45.567  INFO 19180 --- [Thread-102] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:50:45.569  INFO 19180 --- [Thread-102] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:50:45.575  INFO 19180 --- [Thread-102] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2021-04-07 15:50:45.645  INFO 19180 --- [Thread-102] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2021-04-07 15:50:46.246  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Start...
+2021-04-07 15:50:46.509  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Starting ComCgSpringBootDemoApplication using Java 1.8.0_281 on DESKTOP-KFP7J4E with PID 19180 (C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo\bin\main started by Vaman in C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo)
+2021-04-07 15:50:46.509  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : No active profile set, falling back to default profiles: default
+2021-04-07 15:50:49.277  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-07 15:50:49.612  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 334 ms. Found 1 JPA repository interfaces.
+2021-04-07 15:50:51.058  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-04-07 15:50:51.059  INFO 19180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-07 15:50:51.060  INFO 19180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 15:50:51.063  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-04-07 15:50:51.064  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-07 15:50:51.065  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-07 15:50:51.065  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-07 15:50:51.169  INFO 19180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-07 15:50:51.169  INFO 19180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4642 ms
+2021-04-07 15:50:51.469  INFO 19180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-07 15:50:51.488  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2021-04-07 15:50:52.313  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2021-04-07 15:50:52.318  INFO 19180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-07 15:50:52.835  INFO 19180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-07 15:50:52.836  INFO 19180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:50:52.858  INFO 19180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-07 15:50:59.328  WARN 19180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-07 15:50:59.818  INFO 19180 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-07 15:50:59.959  INFO 19180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:51:00.173  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-04-07 15:51:00.174  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-07 15:51:00.176  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-07 15:51:00.197  INFO 19180 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-07 15:51:00.513  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmpListUsingGET_1
+2021-04-07 15:51:00.522  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmployeeUsingGET_1
+2021-04-07 15:51:00.567  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Started ComCgSpringBootDemoApplication in 14.297 seconds (JVM running for 2457.406)
+2021-04-07 15:51:00.571  INFO 19180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-07 15:57:05.591  INFO 19744 --- [main] c.c.s.boot.demo.EmployeeControllerTests  : Starting EmployeeControllerTests using Java 1.8.0_281 on DESKTOP-KFP7J4E with PID 19744 (started by Vaman in C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo)
+2021-04-07 15:57:05.606  INFO 19744 --- [main] c.c.s.boot.demo.EmployeeControllerTests  : No active profile set, falling back to default profiles: default
+2021-04-07 15:57:15.734  INFO 19744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-07 15:57:16.284  INFO 19744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 506 ms. Found 1 JPA repository interfaces.
+2021-04-07 15:57:22.209  INFO 19744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-04-07 15:57:22.251  INFO 19744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-07 15:57:22.254  INFO 19744 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 15:57:22.260  INFO 19744 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-04-07 15:57:22.262  INFO 19744 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-07 15:57:22.271  INFO 19744 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-07 15:57:22.291  INFO 19744 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-07 15:57:23.062  INFO 19744 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-07 15:57:23.064  INFO 19744 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 16707 ms
+2021-04-07 15:57:26.858  INFO 19744 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-07 15:57:27.625  INFO 19744 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-07 15:57:29.135  INFO 19744 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-07 15:57:30.113  INFO 19744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-07 15:57:33.621  INFO 19744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-07 15:57:33.718  INFO 19744 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-07 15:57:43.569  INFO 19744 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-07 15:57:43.618  INFO 19744 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:57:55.978  WARN 19744 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-07 15:58:00.289  INFO 19744 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-07 15:58:02.201  INFO 19744 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:58:05.757  INFO 19744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 64721 (http) with context path ''
+2021-04-07 15:58:05.761  INFO 19744 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-07 15:58:05.985  INFO 19744 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-07 15:58:06.169  INFO 19744 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-07 15:58:08.275  INFO 19744 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmpListUsingGET_1
+2021-04-07 15:58:08.319  INFO 19744 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmployeeUsingGET_1
+2021-04-07 15:58:08.784  INFO 19744 --- [main] c.c.s.boot.demo.EmployeeControllerTests  : Started EmployeeControllerTests in 66.237 seconds (JVM running for 81.33)
+2021-04-07 15:58:11.480  INFO 19744 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-07 15:58:11.483  INFO 19744 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-07 15:58:11.493  INFO 19744 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2021-04-07 15:58:14.341  INFO 19744 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 15:58:14.356  INFO 19744 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 15:58:14.367  INFO 19744 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-07 15:58:14.437  INFO 19744 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-07 16:05:19.470  INFO 19180 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-07 16:05:19.475  INFO 19180 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-07 16:05:19.481  INFO 19180 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
