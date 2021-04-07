@@ -2,6 +2,8 @@ package com.cg.spring.boot.demo.controller;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,9 +11,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cg.spring.boot.demo.model.Employee;
+import com.cg.spring.boot.demo.repository.EmployeeRepository;
 import com.cg.spring.boot.demo.service.EmployeeService;
 
 //mark class as Controller
@@ -22,6 +26,16 @@ public class EmployeeController {
 
 	@Autowired
 	EmployeeService employeeService;
+
+	@Autowired
+	EmployeeRepository employeeRepository;
+
+	@GetMapping(value = { "getEmpList", "/" })
+	public @ResponseBody Page<Employee> getEmpList(Pageable pageable) {
+
+		return employeeService.getEmpList(pageable);
+
+	}
 
 //creating a get mapping that retrieves all the Employee detail from the database
 	@GetMapping("/getAllEmployee")
@@ -146,4 +160,11 @@ public class EmployeeController {
 //		employeeService.saveOrUpdate(Employee);
 //		return Employee;
 //	}
+// @GetMapping("/getEmpSort/{sort1}/{sort2}")
+//@ResponseBody
+//public List<Employee> getEmpSort(@PathVariable String sort1, @PathVariable String sort2) {
+//	List<Employee> emp = (List<Employee>) employeeService.getEmpSort(sort1, sort2);
+//	return emp;
+//}
+
 //}
