@@ -5439,3 +5439,39 @@ Caused by: oracle.jdbc.OracleDatabaseException: ORA-00955: name is already used 
 2021-04-07 16:05:19.470  INFO 19180 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-07 16:05:19.475  INFO 19180 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-07 16:05:19.481  INFO 19180 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2021-04-07 16:28:06.276  INFO 19180 --- [Thread-109] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 16:28:06.281  INFO 19180 --- [Thread-109] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 16:28:06.289  INFO 19180 --- [Thread-109] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2021-04-07 16:28:06.337  INFO 19180 --- [Thread-109] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2021-04-07 16:28:07.113  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Start...
+2021-04-07 16:28:07.296  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Starting ComCgSpringBootDemoApplication using Java 1.8.0_281 on DESKTOP-KFP7J4E with PID 19180 (C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo\bin\main started by Vaman in C:\VamanCode\eclipse-workspace-8\com-cg-spring-boot-demo)
+2021-04-07 16:28:07.297  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : No active profile set, falling back to default profiles: default
+2021-04-07 16:28:08.705  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-07 16:28:08.737  INFO 19180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2021-04-07 16:28:09.341  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-04-07 16:28:09.343  INFO 19180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-07 16:28:09.343  INFO 19180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 16:28:09.344  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-04-07 16:28:09.344  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-07 16:28:09.345  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-07 16:28:09.346  INFO 19180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-07 16:28:09.380  INFO 19180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-07 16:28:09.381  INFO 19180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2068 ms
+2021-04-07 16:28:09.537  INFO 19180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-07 16:28:09.567  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2021-04-07 16:28:09.858  INFO 19180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2021-04-07 16:28:09.861  INFO 19180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-07 16:28:10.223  INFO 19180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-07 16:28:10.224  INFO 19180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-07 16:28:10.241  INFO 19180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-07 16:28:11.037  WARN 19180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-07 16:28:11.399  INFO 19180 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-07 16:28:11.936  INFO 19180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 16:28:13.030  INFO 19180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-04-07 16:28:13.034  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-07 16:28:13.036  INFO 19180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-07 16:28:13.056  INFO 19180 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-07 16:28:13.215  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmpListUsingGET_1
+2021-04-07 16:28:13.226  INFO 19180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getEmployeeUsingGET_1
+2021-04-07 16:28:13.254  INFO 19180 --- [restartedMain] c.c.s.b.d.ComCgSpringBootDemoApplication : Started ComCgSpringBootDemoApplication in 6.104 seconds (JVM running for 4690.092)
+2021-04-07 16:28:13.259  INFO 19180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
