@@ -26,7 +26,7 @@ public class EmployeeController {
 //creating a get mapping that retrieves all the Employee detail from the database
 	@GetMapping("/getAllEmployee")
 	private List<Employee> getAllEmployee() {
-		return employeeService.getAllEmployee();
+		return employeeService.getAllEmployees();
 	}
 
 //creating a get mapping that retrieves the detail of a specific Employee
@@ -35,7 +35,12 @@ public class EmployeeController {
 		return employeeService.getEmployeeById(eid);
 	}
 
-//creating a delete mapping that deletes a specified Employee
+	@GetMapping("/getEmpByName/{name}")
+	private Employee getEmployee(@PathVariable("name") String name) {
+		return employeeService.getEmployeeByName(name);
+	}
+
+	// creating a delete mapping that deletes a specified Employee
 	@DeleteMapping("/deleteEmployee/{eid}")
 	private void deleteEmployee(@PathVariable("eid") int eid) {
 		employeeService.delete(eid);

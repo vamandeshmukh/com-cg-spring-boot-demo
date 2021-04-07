@@ -18,7 +18,7 @@ public class EmployeeService {
 	EmployeeRepository employeeRepository;
 
 //getting all Employee record by using the method findaAll() of CrudRepository
-	public List<Employee> getAllEmployee() {
+	public List<Employee> getAllEmployees() {
 		List<Employee> employee = new ArrayList<Employee>();
 		employeeRepository.findAll().forEach(employee1 -> employee.add(employee1));
 		return employee;
@@ -39,7 +39,14 @@ public class EmployeeService {
 		}
 	}
 
-//saving a specific record by using the method save() of CrudRepository
+	public Employee getEmployeeByName(String name) {
+		
+//		employeeRepository.f
+		
+		return employeeRepository.findByName(name);
+	}
+
+	// saving a specific record by using the method save() of CrudRepository
 	public void saveOrUpdate(Employee employee) {
 		employeeRepository.save(employee);
 //		employeeRepository.
