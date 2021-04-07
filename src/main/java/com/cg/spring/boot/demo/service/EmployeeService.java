@@ -21,7 +21,6 @@ public class EmployeeService {
 
 	public Page<Employee> getEmpList(Pageable pageable) {
 		return employeeRepository.findAll(pageable);
-
 	}
 
 	// getting all Employee record by using the method findaAll() of CrudRepository

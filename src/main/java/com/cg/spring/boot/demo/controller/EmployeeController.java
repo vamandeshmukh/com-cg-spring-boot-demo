@@ -4,6 +4,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.cg.spring.boot.demo.exceptions.EmployeeNotfoundException;
 import com.cg.spring.boot.demo.model.Employee;
 import com.cg.spring.boot.demo.repository.EmployeeRepository;
 import com.cg.spring.boot.demo.service.EmployeeService;
@@ -29,6 +32,16 @@ public class EmployeeController {
 
 	@Autowired
 	EmployeeRepository employeeRepository;
+
+	@GetMapping("/getThisEmp/{eid}")
+	public ResponseEntity<Employee> getThisEmp(@PathVariable("eid") int eid) {
+		Employee emp = employeeService.getEmployeeById(eid);
+		if (emp == null)
+			throw new EmployeeNotfoundException();
+		return new ResponseEntity<>(emp, HttpStatus.OK);
+	}
+
+	// paging and sorting demo endpoint
 
 	@GetMapping(value = { "getEmpList", "/" })
 	public @ResponseBody Page<Employee> getEmpList(Pageable pageable) {
