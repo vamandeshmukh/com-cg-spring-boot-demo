@@ -5,20 +5,20 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-// test comment 
-
 
 @SpringBootApplication
 
-public class ComCgSpringBootDemoApplication {
+public class App {
 
-	private static final Logger LOG = LoggerFactory.getLogger(ComCgSpringBootDemoApplication.class);
+	private static final Logger LOG = LoggerFactory.getLogger(App.class);
 
 	public static void main(String[] args) {
 
-		LOG.info("Start...");
+		LOG.info("Spring app started");
 
-		SpringApplication.run(ComCgSpringBootDemoApplication.class, args);
+		SpringApplication.run(App.class, args);
 
 	}
 }
+
+

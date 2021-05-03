@@ -5,8 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.springframework.lang.NonNull;
-
 @Entity
 @Table(name = "emp")
 public class Employee {
@@ -16,7 +14,7 @@ public class Employee {
 	private int eid;
 	@Column
 	private String name;
-	@Column
+//	@Column
 	private double salary;
 
 	public Employee() {

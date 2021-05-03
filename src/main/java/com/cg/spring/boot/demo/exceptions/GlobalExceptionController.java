@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 @ControllerAdvice
-public class EmployeeExceptionController {
+public class GlobalExceptionController {
 //	public class ExceptionController { // Global Exception Controller 
 
 	@ExceptionHandler(value = EmployeeNotfoundException.class)
@@ -17,7 +17,8 @@ public class EmployeeExceptionController {
 		String response = "This Employee does not exist.";
 
 //		return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
-		return new ResponseEntity<>(response, HttpStatus.valueOf(400));
+		return new ResponseEntity<>(response, 
+				HttpStatus.valueOf(400));
 	}
 
 	// create other exception handlers

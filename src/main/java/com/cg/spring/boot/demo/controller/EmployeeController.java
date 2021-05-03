@@ -6,6 +6,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,6 +24,8 @@ import com.cg.spring.boot.demo.service.EmployeeService;
 //mark class as Controller
 @RestController
 @RequestMapping("/employee")
+@CrossOrigin(origins = "*")
+//@CrossOrigin(origins = "http://localhost:4201")
 public class EmployeeController {
 //autowire the EmployeeService class
 
@@ -32,6 +35,7 @@ public class EmployeeController {
 	@Autowired
 	EmployeeRepository employeeRepository;
 
+	@CrossOrigin
 	@GetMapping("/getThisEmp/{eid}")
 	public ResponseEntity<Employee> getThisEmp(@PathVariable("eid") int eid) {
 		Employee emp = employeeService.getEmployeeById(eid);
