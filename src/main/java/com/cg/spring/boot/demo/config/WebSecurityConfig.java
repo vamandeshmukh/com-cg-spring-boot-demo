@@ -43,8 +43,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		log.info("authenticationManagerBean");
 		return super.authenticationManagerBean();
 	}
- 
-
 
 //	    @Bean
 //	    CorsConfigurationSource corsConfigurationSource() {
@@ -53,7 +51,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 //	        source.registerCorsConfiguration("/**", new CorsConfiguration().applyPermitDefaultValues());
 //	        return source;
 //	    }
-	
+
 	@Override
 	protected void configure(HttpSecurity httpSecurity) throws Exception { // 2
 		httpSecurity.cors();
@@ -66,17 +64,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	}
 }
 
-
-
-
-
 //config.setAllowCredentials(true);
 //config.setAllowedOrigins(Collections.singletonList("*"));
 //config.setAllowedHeaders(Arrays.asList("Origin", "Content-Type", "Accept"));
 //config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
-
-
-
-
-
-
