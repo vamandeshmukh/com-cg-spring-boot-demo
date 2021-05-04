@@ -5,6 +5,9 @@ import java.io.Serializable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
+// USER class 
+
 public class AppUser implements Serializable {
 
 	private final Logger log = LoggerFactory.getLogger(AppUser.class);
