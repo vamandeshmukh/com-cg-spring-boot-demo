@@ -32,13 +32,14 @@ public class UserController {
 
 	// test method, delete afterwards
 
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "*")
 	@GetMapping("/hello")
 	public String hello() {
 		log.info("hello");
 		return "Hello";
 	}
 
+	@CrossOrigin(origins = "*")
 	@PostMapping("/login") // 1
 	public String login(@RequestBody AppUser myUser) {
 		log.info("login");
